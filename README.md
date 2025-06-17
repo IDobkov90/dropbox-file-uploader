@@ -19,7 +19,7 @@
 ## Настройка на проекта
 
 1. Клонирайте репозиторито:
-   git clone https://github.com/вашето-потребителско-име/dropbox-file-uploader.git
+   git clone https://github.com/IDobkov90/dropbox-file-uploader.git
 
 
 2. Създайте `.env` файл в основната директория на проекта със следното съдържание:
