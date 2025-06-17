@@ -1,40 +1,39 @@
 # Dropbox File Uploader
 
-Приложение за качване на файлове в Dropbox чрез Spring Boot.
+An application for uploading files to Dropbox using Spring Boot.
+## Features
 
-## Функционалности
 
-- Качване на изображения и PDF файлове в Dropbox
-- Drag-and-drop интерфейс
-- Проследяване на прогреса при качване
-- Поддръжка на кирилица в имената на файловете
-- Валидация на типа и размера на файловете
+- Upload images and PDF files to Dropbox
+- Drag-and-drop interface
+- Progress tracking during upload
+- Support for Cyrillic characters in filenames
+- File type and size validation
 
-## Изисквания
+## Requirements
 
-- Java 17 или по-нова версия
+- Java 17 or newer version
 - Maven
-- Dropbox акаунт и API токен
+- Dropbox account and API token
 
-## Настройка на проекта
+## Project Setup
 
-1. Клонирайте репозиторито:
+1. Clone the repository
    git clone https://github.com/IDobkov90/dropbox-file-uploader.git
 
 
-2. Създайте `.env` файл в основната директория на проекта със следното съдържание:
-DROPBOX_ACCESS_TOKEN=вашият_токен_за_достъп
+2. Create a .env file in the root directory of the project with the following content:
+   DROPBOX_ACCESS_TOKEN=your_access_token
 
 
+3. Start the application:
 
-3. Стартирайте приложението:
 
+## Configuration
 
-## Конфигурация
+The main settings can be modified in application.properties:
 
-Основните настройки могат да бъдат променени в `application.properties`:
-
-- `dropbox.target-folder` - Целевата директория в Dropbox
-- `server.port` - Порт на сървъра
-- `spring.servlet.multipart.max-file-size` - Максимален размер на файла
+- dropbox.target-folder - The target directory in Dropbox
+- server.port - Server port
+- spring.servlet.multipart.max-file-size - Maximum file size for upload
 
